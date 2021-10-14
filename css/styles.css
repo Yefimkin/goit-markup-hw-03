@@ -11,8 +11,20 @@
   box-sizing: border-box;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.container {
 }
 
 .list {
@@ -57,8 +69,6 @@ body {
   position: absolute;
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 24px;
   padding: 24px 1240px 25px 215px;
 }
 .footer-logo {
