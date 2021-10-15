@@ -18,11 +18,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin 0;
+  margin: 0;
 }
 
 ul {
-  margin 0;
+  margin: 0;
   padding: 0;
 }
 body {
@@ -30,6 +30,10 @@ body {
 }
 
 .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .list {
@@ -58,12 +62,8 @@ body {
 /* --- header --- */
 
 .header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -71,10 +71,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   display: flex;
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  padding: 24px 1240px 25px 215px;
+  margin-right: 93px;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -82,6 +79,10 @@ body {
   font-weight: 700;
   display: flex;
 }
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu-link {
   font-style: normal;
   font-weight: 500;
@@ -90,13 +91,22 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
-.menu-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.header-container {
   display: flex;
+  align-items: center;
+}
+.header-conect {
+  margin-left: auto;
+  align-items: center;
 }
 
+.menu-list {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .contacts {
   display: flex;
 }
@@ -117,16 +127,32 @@ body {
 .hero-top {
   background-color: #2f303a;
 }
-
+.hero-container {
+  display: flex;
+}
 .hero-title {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--header-color);
+}
+
+.hero-after-title {
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
+  width: 696px;
+  height: 120px;
+  /* margin-left: auto; */
+  /* align-items: center; */
+}
+
+.hero-button {
+  display: flex;
+  padding-left: 700px;
+  padding-bottom: 200px;
 }
 
 .btn {
@@ -137,21 +163,16 @@ body {
   letter-spacing: 0.06em;
   color: var(--header-color);
   background-color: var(--accent-color);
-  text-align: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  border: 1px, var(--accent-color);
 }
 
 .btn:hover {
   background-color: #188ce8;
 }
 /* --- section 2 --- */
-
-/* .section-two {
-  position: absolute;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
-} */
 
 .section-two-list {
   display: flex;
