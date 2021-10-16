@@ -25,6 +25,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -127,9 +131,7 @@ body {
 .hero-top {
   background-color: #2f303a;
 }
-.hero-container {
-  display: flex;
-}
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -141,18 +143,16 @@ body {
 }
 
 .hero-after-title {
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
+  margin-left: auto;
+  margin-right: auto;
   width: 696px;
-  height: 120px;
-  /* margin-left: auto; */
-  /* align-items: center; */
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-button {
-  display: flex;
-  padding-left: 700px;
-  padding-bottom: 200px;
+  text-align: center;
 }
 
 .btn {
@@ -163,10 +163,11 @@ body {
   letter-spacing: 0.06em;
   color: var(--header-color);
   background-color: var(--accent-color);
-  border-radius: 5px;
+  border-radius: 4px;
   width: 200px;
   height: 50px;
   border: 1px, var(--accent-color);
+  text-align: center;
 }
 
 .btn:hover {
@@ -176,6 +177,19 @@ body {
 
 .section-two-list {
   display: flex;
+}
+
+.section-two-item {
+  width: 270px;
+  height: 101px;
+}
+.section-two-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-two-cantainer {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .text-name {
@@ -191,6 +205,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-top: 10px;
 }
 
 /* --- section three --- */
@@ -203,12 +218,24 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
 .section-three-list {
   display: flex;
 }
+.section-three-item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-three-container {
+  padding-bottom: 94px;
+}
+
 /* --- section 4 --- */
+
+.team {
+  background-color: #f5f4fa;
+}
 
 .team-title {
   font-weight: 700;
