@@ -68,6 +68,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -142,6 +143,9 @@ body {
   color: var(--header-color);
 }
 
+.hero-container {
+  display: flex;
+}
 .hero-after-title {
   margin-left: auto;
   margin-right: auto;
@@ -149,10 +153,6 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
-}
-
-.hero-button {
-  text-align: center;
 }
 
 .btn {
@@ -167,11 +167,16 @@ body {
   width: 200px;
   height: 50px;
   border: 1px, var(--accent-color);
+  display: block;
 }
 
 .btn:hover {
   background-color: #188ce8;
 }
+
+/* .hero-button {
+  display: block;
+} */
 /* --- section 2 --- */
 
 .section-two-list {
@@ -250,10 +255,18 @@ body {
 
 .team-list {
   display: flex;
+  margin-left: -30px;
 }
 
-.team-item:not(:first-child) {
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+}
+
+.team-after-item {
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
 }
 
 .team-name {
@@ -375,4 +388,13 @@ body {
   flex-basis: calc((100% - 3 * 30px) / 9);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.projects-items-description {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
 }
