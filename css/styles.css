@@ -131,6 +131,8 @@ body {
 
 .hero-top {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -143,16 +145,17 @@ body {
   color: var(--header-color);
 }
 
-.hero-container {
-  display: flex;
+.hero-button {
+  display: block;
+  margin: 0 auto;
 }
+
 .hero-after-title {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 30px;
 }
 
 .btn {
@@ -167,16 +170,12 @@ body {
   width: 200px;
   height: 50px;
   border: 1px, var(--accent-color);
-  display: block;
 }
 
 .btn:hover {
   background-color: #188ce8;
 }
 
-/* .hero-button {
-  display: block;
-} */
 /* --- section 2 --- */
 
 .section-two-list {
