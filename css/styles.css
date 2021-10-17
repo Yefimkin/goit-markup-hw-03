@@ -167,7 +167,6 @@ body {
   width: 200px;
   height: 50px;
   border: 1px, var(--accent-color);
-  text-align: center;
 }
 
 .btn:hover {
@@ -350,7 +349,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  text-align: center;
 }
 
 .project-text {
@@ -358,14 +356,20 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  text-align: center;
 }
 
 .project-buttons {
   display: flex;
+  justify-content: center;
   padding-bottom: 34px;
 }
 .projects-list {
   display: flex;
-  font-weight: wrap;
+  flex-wrap: wrap;
+}
+/* .projects-items {
+  padding-right: 30px;
+} */
+.projects-items:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
