@@ -254,18 +254,18 @@ body {
 
 .team-list {
   display: flex;
-  margin-left: -30px;
+  margin-right: -30px;
 }
 
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .team-after-item {
-  border-bottom: 1px solid #ececec;
+  /* border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
-  border-left: 1px solid #ececec;
+  border-left: 1px solid #ececec; */
 }
 
 .team-name {
