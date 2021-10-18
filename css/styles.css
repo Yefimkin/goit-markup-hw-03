@@ -371,7 +371,9 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
-
+.project-btn:not(:first-child) {
+  padding-left: 8px;
+}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
