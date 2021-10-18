@@ -179,7 +179,7 @@ body {
 /* --- section 2 --- */
 .section-two {
   padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 
 .section-two-list {
@@ -372,7 +372,7 @@ body {
   margin-bottom: 50px;
 }
 .project-btn:not(:first-child) {
-  padding-left: 8px;
+  margin-left: 8px;
 }
 .projects-list {
   display: flex;
