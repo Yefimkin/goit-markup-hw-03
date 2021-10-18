@@ -177,6 +177,10 @@ body {
 }
 
 /* --- section 2 --- */
+.section-two {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-two-list {
   display: flex;
@@ -188,11 +192,6 @@ body {
 }
 .section-two-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.section-two-cantainer {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .text-name {
@@ -212,6 +211,10 @@ body {
 }
 
 /* --- section three --- */
+.section-three {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-three-title {
   font-style: normal;
@@ -229,9 +232,6 @@ body {
 }
 .section-three-item:not(:last-child) {
   margin-right: 30px;
-}
-.section-three-container {
-  padding-bottom: 94px;
 }
 
 /* --- section 4 --- */
@@ -262,12 +262,6 @@ body {
   margin-right: 30px;
 }
 
-.team-after-item {
-  /* border-bottom: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-left: 1px solid #ececec; */
-}
-
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -275,17 +269,18 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
+  padding-bottom: 10px;
+}
+.team-after-item {
+  padding-bottom: 30px;
   padding-top: 30px;
 }
-
 .team-prof {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-text-color);
-  padding-bottom: 30px;
-  padding-top: 10px;
 }
 
 /* --- footer --- */
@@ -303,7 +298,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-link {
@@ -340,7 +335,6 @@ body {
   line-height: 1.62;
   color: var(--primary-text-color);
   height: 38px;
-  margin-left: 8px;
   background-color: var(--accent-color);
   border-radius: 4px;
   border: 1px, var(--accent-color);
@@ -375,20 +369,21 @@ body {
 .project-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   padding-bottom: 94px;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
 }
 
 .projects-items {
   flex-basis: calc((100% - 3 * 30px) / 9);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .projects-items-description {
